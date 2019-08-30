@@ -20,6 +20,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var mapView: GMSMapView!
     
+    fileprivate let fabMenuSize = CGSize(width: 56, height: 56)
+    fileprivate let bottomInset: CGFloat = 24
+    fileprivate let rightInset: CGFloat = 24
+    
     let currentLocationMarker = GMSMarker()
     var locationManager = CLLocationManager()
     var chosenPlace: MyPlace?
@@ -34,18 +38,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return v
     }()
     
-    let btnMyLocation: UIButton = {
-        let btn=UIButton()
-        btn.backgroundColor = UIColor.white
-        btn.setImage(#imageLiteral(resourceName: "my_location"), for: .normal)
-        btn.layer.cornerRadius = 25
-        btn.clipsToBounds=true
-        btn.tintColor = UIColor.gray
-        btn.imageView?.tintColor=UIColor.gray
-        btn.addTarget(self, action: #selector(btnMyLocationAction), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints=false
-        return btn
-    }()
+    var cells: [LiquidFloatingCell] = []
+    var floatingActionButton: LiquidFloatingActionButton!
     
     let txtFieldSearch: UITextField = {
         let tf=UITextField()
@@ -59,6 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
@@ -71,6 +66,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setupViews()
         txtFieldSearch.delegate=self
         // Do any additional setup after loading the view.
+        
+        let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
+            let floatingActionButton = CustomDrawingActionButton(frame: frame)
+            floatingActionButton.animateStyle = style
+            floatingActionButton.dataSource = self
+            floatingActionButton.delegate = self
+            return floatingActionButton
+        }
+        
+        let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
+            let cell = LiquidFloatingCell(icon: UIImage(named: iconName)!)
+            return cell
+        }
+//        let customCellFactory: (String) -> LiquidFloatingCell = { (iconName) in
+//            let cell = MenuCell(icon: UIImage(named: iconName)!, name: iconName)
+//            return cell
+//        }
+        cells.append(cellFactory("ic_cloud"))
+        cells.append(cellFactory("ic_system"))
+        cells.append(cellFactory("ic_place"))
+        
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
+        let bottomRightButton = createButton(floatingFrame, .up)
+        
+        let image = UIImage(named: "menu_plus")
+        bottomRightButton.image = image
+        
+        self.view.addSubview(bottomRightButton)
+        
     }
     
     func showPartyMarkers(lat: Double, long: Double) {
@@ -94,14 +118,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-    @objc func btnMyLocationAction() {
-        let location: CLLocation? = mapView.myLocation
-        if location != nil {
-            mapView.animate(toLocation: (location?.coordinate)!)
-        }
-    }
-    
     @objc func restaurantTapped(tag: Int) {
         let v=DetailsVC()
         v.passedData = previewDemoData[tag]
@@ -118,12 +134,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setupTextField(textField: txtFieldSearch, img: #imageLiteral(resourceName: "map_Pin"))
         
         restaurantPreviewView=RestaurantPreviewView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 190))
-        
-        self.view.addSubview(btnMyLocation)
-        btnMyLocation.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive=true
-        btnMyLocation.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive=true
-        btnMyLocation.widthAnchor.constraint(equalToConstant: 50).isActive=true
-        btnMyLocation.heightAnchor.constraint(equalTo: btnMyLocation.widthAnchor).isActive=true
+ 
     }
     
     func setupTextField(textField: UITextField, img: UIImage){
@@ -147,7 +158,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.present(autoCompleteController, animated: true, completion: nil)
         return false
     }
-
 }
 
 extension ViewController: CLLocationManagerDelegate {
@@ -197,6 +207,7 @@ extension ViewController: GMSMapViewDelegate {
 }
 
 extension ViewController: GMSAutocompleteViewControllerDelegate {
+    
     // MARK: GOOGLE AUTO COMPLETE DELEGATE
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         let lat = place.coordinate.latitude
@@ -233,6 +244,24 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
     func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
-
+}
+extension ViewController: LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
+    func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+        return cells.count
+    }
     
+    func cellForIndex(_ index: Int) -> LiquidFloatingCell {
+        return cells[index]
+    }
+    
+    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+        print("did Tapped! \(index)")
+        if index == 2 {
+            let location: CLLocation? = mapView.myLocation
+            if location != nil {
+                mapView.animate(toLocation: (location?.coordinate)!)
+            }
+        }
+        liquidFloatingActionButton.close()
+    }
 }

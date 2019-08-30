@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F237D14E7FB084B930EC36D /* Pods_PassionArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F27ED4F8B21B9162481E7C5 /* Pods_PassionArt.framework */; };
+		66D91438CCC8F076BC398E24 /* Pods_PassionArtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2B87990D6B5C3D2390B08D /* Pods_PassionArtUITests.framework */; };
+		7FD74DD268AA21C25DA83ED3 /* Pods_PassionArtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A527C526FD5943C4C1E901 /* Pods_PassionArtTests.framework */; };
 		8867A1E12317B61600566863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A1E02317B61600566863 /* AppDelegate.swift */; };
 		8867A1E32317B61600566863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A1E22317B61600566863 /* ViewController.swift */; };
 		8867A1E62317B61600566863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867A1E42317B61600566863 /* Main.storyboard */; };
@@ -15,6 +18,19 @@
 		8867A1EE2317B61800566863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867A1EC2317B61800566863 /* LaunchScreen.storyboard */; };
 		8867A1F92317B61800566863 /* PassionArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A1F82317B61800566863 /* PassionArtTests.swift */; };
 		8867A2042317B61800566863 /* PassionArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A2032317B61800566863 /* PassionArtUITests.swift */; };
+		8867A2122317BDF900566863 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A2112317BDF900566863 /* CustomMarkerView.swift */; };
+		8867A2142317BE9C00566863 /* RestaurantPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A2132317BE9C00566863 /* RestaurantPreviewView.swift */; };
+		8867A2162317BEAF00566863 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867A2152317BEAF00566863 /* DetailsVC.swift */; };
+		88F549032319102900FC4E97 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F549022319102900FC4E97 /* ArrayEx.swift */; };
+		88F549052319103800FC4E97 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F549042319103800FC4E97 /* CGPointEx.swift */; };
+		88F549072319105700FC4E97 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F549062319105700FC4E97 /* CGRectEx.swift */; };
+		88F549092319107000FC4E97 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F549082319107000FC4E97 /* LiquidFloatingActionButton.swift */; };
+		88F5490B2319109E00FC4E97 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5490A2319109E00FC4E97 /* LiquidUtil.swift */; };
+		88F5490D231910AD00FC4E97 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5490C231910AD00FC4E97 /* LiquittableCircle.swift */; };
+		88F5490F231910BB00FC4E97 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5490E231910BB00FC4E97 /* SimpleCircleLiquidEngine.swift */; };
+		88F54911231910CA00FC4E97 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F54910231910CA00FC4E97 /* UIColorEx.swift */; };
+		88F54913231911C800FC4E97 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F54912231911C800FC4E97 /* MenuCell.swift */; };
+		88F549152319120100FC4E97 /* CustomDrawingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F549142319120100FC4E97 /* CustomDrawingActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2B87990D6B5C3D2390B08D /* Pods_PassionArtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionArtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		627457BFAE8FB2C346185304 /* Pods-PassionArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-PassionArtUITests/Pods-PassionArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8867A1DD2317B61600566863 /* PassionArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassionArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867A1E02317B61600566863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8867A1E22317B61600566863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,26 @@
 		8867A1FF2317B61800566863 /* PassionArtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassionArtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867A2032317B61800566863 /* PassionArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassionArtUITests.swift; sourceTree = "<group>"; };
 		8867A2052317B61800566863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8867A2112317BDF900566863 /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		8867A2132317BE9C00566863 /* RestaurantPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPreviewView.swift; sourceTree = "<group>"; };
+		8867A2152317BEAF00566863 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		88F549022319102900FC4E97 /* ArrayEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
+		88F549042319103800FC4E97 /* CGPointEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
+		88F549062319105700FC4E97 /* CGRectEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		88F549082319107000FC4E97 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		88F5490A2319109E00FC4E97 /* LiquidUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
+		88F5490C231910AD00FC4E97 /* LiquittableCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
+		88F5490E231910BB00FC4E97 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		88F54910231910CA00FC4E97 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		88F54912231911C800FC4E97 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		88F549142319120100FC4E97 /* CustomDrawingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawingActionButton.swift; sourceTree = "<group>"; };
+		8B5C873FA4C4F569FB0B469C /* Pods-PassionArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArtUITests.release.xcconfig"; path = "Target Support Files/Pods-PassionArtUITests/Pods-PassionArtUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90A527C526FD5943C4C1E901 /* Pods_PassionArtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionArtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F27ED4F8B21B9162481E7C5 /* Pods_PassionArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBE80E6B0381E31FA38DE89 /* Pods-PassionArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArtTests.debug.xcconfig"; path = "Target Support Files/Pods-PassionArtTests/Pods-PassionArtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCB7D04C24B8F8D18A85DF06 /* Pods-PassionArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArt.release.xcconfig"; path = "Target Support Files/Pods-PassionArt/Pods-PassionArt.release.xcconfig"; sourceTree = "<group>"; };
+		E0E783F91B428654AA33412B /* Pods-PassionArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArt.debug.xcconfig"; path = "Target Support Files/Pods-PassionArt/Pods-PassionArt.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0CBB8B4364462EF41D7961 /* Pods-PassionArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionArtTests.release.xcconfig"; path = "Target Support Files/Pods-PassionArtTests/Pods-PassionArtTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F237D14E7FB084B930EC36D /* Pods_PassionArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD74DD268AA21C25DA83ED3 /* Pods_PassionArtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +110,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D91438CCC8F076BC398E24 /* Pods_PassionArtUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		539B4F0A2295656791FFCA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F27ED4F8B21B9162481E7C5 /* Pods_PassionArt.framework */,
+				90A527C526FD5943C4C1E901 /* Pods_PassionArtTests.framework */,
+				0B2B87990D6B5C3D2390B08D /* Pods_PassionArtUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8867A1D42317B61600566863 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +134,8 @@
 				8867A1F72317B61800566863 /* PassionArtTests */,
 				8867A2022317B61800566863 /* PassionArtUITests */,
 				8867A1DE2317B61600566863 /* Products */,
+				AA2761CDB2297DFE4EF06BF2 /* Pods */,
+				539B4F0A2295656791FFCA08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +152,10 @@
 		8867A1DF2317B61600566863 /* PassionArt */ = {
 			isa = PBXGroup;
 			children = (
+				88E641252317E5D6002CF9E1 /* Model */,
+				88E641242317E5CA002CF9E1 /* View */,
+				88E641232317E5B9002CF9E1 /* Controller */,
 				8867A1E02317B61600566863 /* AppDelegate.swift */,
-				8867A1E22317B61600566863 /* ViewController.swift */,
 				8867A1E42317B61600566863 /* Main.storyboard */,
 				8867A1EA2317B61800566863 /* Assets.xcassets */,
 				8867A1EC2317B61800566863 /* LaunchScreen.storyboard */,
@@ -128,6 +183,62 @@
 			path = PassionArtUITests;
 			sourceTree = "<group>";
 		};
+		88E641232317E5B9002CF9E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8867A1E22317B61600566863 /* ViewController.swift */,
+				8867A2152317BEAF00566863 /* DetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88E641242317E5CA002CF9E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8867A2112317BDF900566863 /* CustomMarkerView.swift */,
+				8867A2132317BE9C00566863 /* RestaurantPreviewView.swift */,
+				88F54912231911C800FC4E97 /* MenuCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88E641252317E5D6002CF9E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88F549012319101E00FC4E97 /* LiquidFloatingActionButton */,
+				88F549142319120100FC4E97 /* CustomDrawingActionButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88F549012319101E00FC4E97 /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				88F549022319102900FC4E97 /* ArrayEx.swift */,
+				88F549042319103800FC4E97 /* CGPointEx.swift */,
+				88F549062319105700FC4E97 /* CGRectEx.swift */,
+				88F549082319107000FC4E97 /* LiquidFloatingActionButton.swift */,
+				88F5490A2319109E00FC4E97 /* LiquidUtil.swift */,
+				88F5490C231910AD00FC4E97 /* LiquittableCircle.swift */,
+				88F5490E231910BB00FC4E97 /* SimpleCircleLiquidEngine.swift */,
+				88F54910231910CA00FC4E97 /* UIColorEx.swift */,
+			);
+			path = LiquidFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		AA2761CDB2297DFE4EF06BF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0E783F91B428654AA33412B /* Pods-PassionArt.debug.xcconfig */,
+				CCB7D04C24B8F8D18A85DF06 /* Pods-PassionArt.release.xcconfig */,
+				AEBE80E6B0381E31FA38DE89 /* Pods-PassionArtTests.debug.xcconfig */,
+				FC0CBB8B4364462EF41D7961 /* Pods-PassionArtTests.release.xcconfig */,
+				627457BFAE8FB2C346185304 /* Pods-PassionArtUITests.debug.xcconfig */,
+				8B5C873FA4C4F569FB0B469C /* Pods-PassionArtUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8867A2082317B61800566863 /* Build configuration list for PBXNativeTarget "PassionArt" */;
 			buildPhases = (
+				B98916105208FF4AF5D40BE1 /* [CP] Check Pods Manifest.lock */,
 				8867A1D92317B61600566863 /* Sources */,
 				8867A1DA2317B61600566863 /* Frameworks */,
 				8867A1DB2317B61600566863 /* Resources */,
+				66C4EEAD4C9FFA9374D2EBB7 /* [CP] Copy Pods Resources */,
+				5A4B5B0589F06B44A30C6B9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8867A20B2317B61800566863 /* Build configuration list for PBXNativeTarget "PassionArtTests" */;
 			buildPhases = (
+				D320DAA3F7A4A99D23C3A0C3 /* [CP] Check Pods Manifest.lock */,
 				8867A1F02317B61800566863 /* Sources */,
 				8867A1F12317B61800566863 /* Frameworks */,
 				8867A1F22317B61800566863 /* Resources */,
@@ -170,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8867A20E2317B61800566863 /* Build configuration list for PBXNativeTarget "PassionArtUITests" */;
 			buildPhases = (
+				2296969E76FBF632A865A0C1 /* [CP] Check Pods Manifest.lock */,
 				8867A1FB2317B61800566863 /* Sources */,
 				8867A1FC2317B61800566863 /* Frameworks */,
 				8867A1FD2317B61800566863 /* Resources */,
@@ -254,13 +370,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2296969E76FBF632A865A0C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassionArtUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4B5B0589F06B44A30C6B9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassionArt/Pods-PassionArt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassionArt/Pods-PassionArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C4EEAD4C9FFA9374D2EBB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassionArt/Pods-PassionArt-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassionArt/Pods-PassionArt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B98916105208FF4AF5D40BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassionArt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D320DAA3F7A4A99D23C3A0C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassionArtTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8867A1D92317B61600566863 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F54911231910CA00FC4E97 /* UIColorEx.swift in Sources */,
+				88F5490D231910AD00FC4E97 /* LiquittableCircle.swift in Sources */,
+				88F5490B2319109E00FC4E97 /* LiquidUtil.swift in Sources */,
 				8867A1E32317B61600566863 /* ViewController.swift in Sources */,
+				88F549032319102900FC4E97 /* ArrayEx.swift in Sources */,
+				8867A2162317BEAF00566863 /* DetailsVC.swift in Sources */,
+				8867A2122317BDF900566863 /* CustomMarkerView.swift in Sources */,
+				88F549072319105700FC4E97 /* CGRectEx.swift in Sources */,
+				8867A2142317BE9C00566863 /* RestaurantPreviewView.swift in Sources */,
+				88F5490F231910BB00FC4E97 /* SimpleCircleLiquidEngine.swift in Sources */,
+				88F549052319103800FC4E97 /* CGPointEx.swift in Sources */,
+				88F549152319120100FC4E97 /* CustomDrawingActionButton.swift in Sources */,
+				88F54913231911C800FC4E97 /* MenuCell.swift in Sources */,
 				8867A1E12317B61600566863 /* AppDelegate.swift in Sources */,
+				88F549092319107000FC4E97 /* LiquidFloatingActionButton.swift in Sources */,
 				8867A1E92317B61600566863 /* PassionArt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,11 +680,13 @@
 		};
 		8867A2092317B61800566863 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E783F91B428654AA33412B /* Pods-PassionArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V6K5R838AQ;
 				INFOPLIST_FILE = PassionArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,11 +700,13 @@
 		};
 		8867A20A2317B61800566863 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB7D04C24B8F8D18A85DF06 /* Pods-PassionArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V6K5R838AQ;
 				INFOPLIST_FILE = PassionArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +720,7 @@
 		};
 		8867A20C2317B61800566863 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBE80E6B0381E31FA38DE89 /* Pods-PassionArtTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +742,7 @@
 		};
 		8867A20D2317B61800566863 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC0CBB8B4364462EF41D7961 /* Pods-PassionArtTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +764,7 @@
 		};
 		8867A20F2317B61800566863 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627457BFAE8FB2C346185304 /* Pods-PassionArtUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +785,7 @@
 		};
 		8867A2102317B61800566863 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B5C873FA4C4F569FB0B469C /* Pods-PassionArtUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
