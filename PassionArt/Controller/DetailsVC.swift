@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsVC: UIViewController {
-    
+        
     var passedData = (title: "Name", img: #imageLiteral(resourceName: "restaurant1"), price: 0)
     
     override func viewDidLoad() {

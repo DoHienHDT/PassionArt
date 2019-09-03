@@ -193,11 +193,13 @@ extension ViewController: GMSMapViewDelegate {
         restaurantPreviewView.setData(title: data.title, img: data.img, price: data.price)
         return restaurantPreviewView
     }
+    
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         guard let customMarkerView = marker.iconView as? CustomMarkerView else { return }
         let tag = customMarkerView.tag
         restaurantTapped(tag: tag)
     }
+    
     func mapView(_ mapView: GMSMapView, didCloseInfoWindowOf marker: GMSMarker) {
         guard let customMarkerView = marker.iconView as? CustomMarkerView else { return }
         let img = customMarkerView.img!
@@ -217,9 +219,9 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
         
         let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: long, zoom: 17.0)
         mapView.camera = camera
-        txtFieldSearch.text=place.formattedAddress
+        txtFieldSearch.text = place.formattedAddress
         chosenPlace = MyPlace(name: place.formattedAddress!, lat: lat, long: long)
-        let marker=GMSMarker()
+        let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: lat, longitude: long)
         marker.title = "\(place.name ?? "")"
         marker.snippet = "\(place.formattedAddress!)"
